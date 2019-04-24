@@ -21,13 +21,13 @@
       },
       "s3": {
         "s3SchemaVersion": "1.0",
-        "configurationId": "QueueToBeDeletedInTenMinutes",
+        "configurationId": "SQSQueueWithTenMinuteDelete",
         "bucket": {
-          "name": "xxxxxx-bucket-that-deletes-everything-after-ten-minutes-xxxx",
+          "name": "xxxxxx-S3BucketWithTenMinuteDelete-xxxx",
           "ownerIdentity": {
             "principalId": "A37MJ1C0WK8I6R"
           },
-          "arn": "arn:aws:s3:::xxxxxx-bucket-that-deletes-everything-after-ten-minutes-xxxxx"
+          "arn": "arn:aws:s3:::xxxxxx-S3BucketWithTenMinuteDelete-xxxxx"
         },
         "object": {
           "key": "bookmark1.PNG",
