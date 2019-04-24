@@ -1,0 +1,43 @@
+{
+  "messageId": "d4965a8b-2e14-4a75-9e59-daec9e6972fe",
+  "receiptHandle": "AQEBnwwiNs8diIK0aYNu+z4ELnOvPURlt+Ecin2FiPydwFwf5NN4G0d+TYQietAbzflp26SqhwXM/iOb0gPvuqLNKYv4Sj7gkzKyLcSTLprPHtnOu79/sTEL9/rwM+s3CRzt0L0KS00SmTUqGs2arLuQK1wmNwRzfnN7wg0r/GhljtLjQ8uDZ6rDvmsb2n08UXCqoApiFuEiYdxmqOavXf6AxZyuwcCbrUmWOeCF9dTccQKxxlDyU/EFlcqd/U14Mos3cjeegu+ZzfuLO+fttuQbsqJ2i+vyF7DSy1tne4vc2b7Yh2E+gDVXDqhhyKcWSEw1OZI6bN7YXU2UtVO/7PdLaTvXQoqAxRSpx0ZSGMFSNsL3UNimF2aWJdF2SC9xFIWGSE/5J7WXdf8MJButUpjZ9eGR+86z7AIw5MuZEjarrEY=",
+  "body": "'{",
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "us-east-1",
+      "eventTime": "2019-04-23T15:30:35.433Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": {
+        "principalId": "AWS:AIDAIUP2TWABMHFBALPSS"
+      },
+      "requestParameters": {
+        "sourceIPAddress": "80.157.4.162"
+      },
+      "responseElements": {
+        "x-amz-request-id": "4941EEC1B620EFE4",
+        "x-amz-id-2": "2kLlsew2L5z0u2bnBinOE4MxyeBICrUAv9WA/9rEe8jyPJd+5AgD8wYp5BAZakZSTGZH5Nr7uWc="
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "QueueToBeDeletedInTenMinutes",
+        "bucket": {
+          "name": "xxxxxx-bucket-that-deletes-everything-after-ten-minutes-xxxx",
+          "ownerIdentity": {
+            "principalId": "A37MJ1C0WK8I6R"
+          },
+          "arn": "arn:aws:s3:::xxxxxx-bucket-that-deletes-everything-after-ten-minutes-xxxxx"
+        },
+        "object": {
+          "key": "bookmark1.PNG",
+          "size": 9524,
+          "eTag": "d947210d527bb6dd67f7df4b995641f2",
+          "sequencer": "005CBF2F9B4D82F28F"
+        }
+      }
+    }
+  ]
+}', 'attributes': {'ApproximateReceiveCount': '17', 'SentTimestamp': '1556033435529', 'SenderId': 'AIDAJHIPRHEMV73VRJEBU', 'ApproximateFirstReceiveTimestamp': '1556033435529'
+    }, 'messageAttributes': {}, 'md5OfBody': '158ac58940b5c9ddf6f56a6eaf48953a', 'eventSource': 'aws:sqs', 'eventSourceARN': 'arn:aws:sqs:us-east-1: XXXXXX:XXXXTenMinuteDelayQueueForDeletingBucketObjects', 'awsRegion': 'us-east-1'
+}
